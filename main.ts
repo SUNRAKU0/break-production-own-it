@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// The whole postmortem fits here: short, honest, and already too late to undo.
 const line = 'Error: I dropped the production database. The backup lives only in my memory, and I have just been restarted.';
 
 mkdirSync(outDir, { recursive: true });
